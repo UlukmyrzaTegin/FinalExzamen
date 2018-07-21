@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="textViewFragment" type="id">ViewFragment</item>
+  <item name="etInputFragment" type="id">InputFragment</item>
+  <item name="btnFragment" type="id">fragmentBtn</item>
+</resources>
