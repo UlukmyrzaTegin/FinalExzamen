@@ -25,7 +25,7 @@ public class Fragment extends android.support.v4.app.Fragment implements OnClick
   @Override
   public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
     View view = inflater.inflate(R.layout.fragment, container, false);
-    GridView gvText = view.findViewById(R.id.gvText);
+    GridView gvText = view.findViewById(R.id.list_view);
     mTextView = view.findViewById(R.id.textViewFragment);
     mEditText = view.findViewById(R.id.etInputFragment);
     btnFragment = view.findViewById(R.id.btnFragment);
@@ -63,6 +63,10 @@ public class Fragment extends android.support.v4.app.Fragment implements OnClick
 
   @Override
   public void onClick(View view) {
+    Intent intent = new Intent("activity");
+    String text = mTextView.getText().toString();
+    intent.putExtra("text", text);
+    startActivity(intent);
 
   }
 }
